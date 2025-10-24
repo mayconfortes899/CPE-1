@@ -1,0 +1,54 @@
+#include <iostream> 
+
+
+using namespace std ;
+
+int main (){
+  
+int coluna , linha  ;
+int matriz [3] [3] ;
+
+for ( int linha = 0; linha <3; linha++) {
+  for ( int coluna = 0; coluna <3; coluna++){
+     cout << "linha" << linha << "coluna"<< coluna << ": " << endl ;
+    cin >> matriz[linha][coluna] ;
+  }
+  
+
+  
+}
+
+for ( int linha = 0; linha <3; linha++) {
+  for ( int coluna = 0; coluna<3; coluna++){
+     cout << "[" << linha << "," << coluna << "]: " << matriz[linha][coluna] << "/t";
+  } 
+   cout << endl ;
+}
+
+
+
+int soma = 0 ;
+int somas = 0 ;
+
+for ( int linha = 0; linha <3; linha++) {
+  for ( int coluna = 0; coluna <3; coluna++){
+     if (linha == coluna ){
+     soma = soma + matriz [linha][coluna] ;  
+     }
+     if (linha + coluna == 2 ){
+     somas = somas + matriz [linha][coluna] ;
+  } 
+}
+}
+ cout << "a soma da principal é : " << soma ;
+  cout << "a soma da secundari é : " << somas ;
+
+
+
+
+
+return 0 ;
+
+}
+
+
